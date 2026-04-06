@@ -17,9 +17,10 @@ nav {
 
 #menu {
     padding: 10px;
+    justify-content: space-between;
 }
 
-#nav-item2, #nav-item1 {
+.nav-item {
     margin: 0;
 }
 
@@ -29,14 +30,6 @@ nav {
     justify-content: center;
 }
 
-#nav-item1 {
-    flex: 1;
-}
-
-
-.flex0 {
-    flex: 0;
-}
 
 .container-letters {
     width: 100%;
