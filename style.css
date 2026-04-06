@@ -45,12 +45,13 @@ nav {
     display: grid;
     justify-content: center;
     align-items: center;
-    padding: 20px 0px;
+    padding: 10px 0px;
     font-family: 'Courier New', Courier, monospace;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
+    gap: 10px;
 }
 
-.container-footer h2,
+.container-footer h3,
 .container-footer p {
     text-align: center;
 }
