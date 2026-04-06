@@ -1,0 +1,49 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+}
+
+body {
+    min-height: 100vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    width: 100%;
+    display: grid;
+}
+
+#nav-item1 {
+    flex: 1;
+}
+
+
+.flex0 {
+    flex: 0;
+}
+
+.container-letters {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.container-footer {
+    max-height: 300px;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 100px;
+}
+
+.container-footer h2,
+.container-footer p {
+    text-align: center;
+}
