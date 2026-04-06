@@ -31,6 +31,21 @@ nav {
     justify-content: center;
 }
 
+.container-buttons {
+    margin: 20px 0px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-left: 5px;
+}
+
+.container-buttons button {
+    width: auto;
+    font-weight: bold;
+    padding: 8px 16px;
+}
+
 
 .container-letters {
     width: 100%;
