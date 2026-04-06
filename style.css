@@ -1,0 +1,14 @@
+.botones{
+   
+    margin: 10px;
+}
+
+.btn-outline-info{
+    border-color:  rgb(116, 220, 78);
+    color: #198754;
+}
+
+.btn-outline-info:hover{
+    background-color: #198754;
+    border-color:  rgb(116, 220, 78);
+}
