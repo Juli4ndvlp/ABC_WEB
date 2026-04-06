@@ -15,6 +15,20 @@ nav {
     display: grid;
 }
 
+#menu {
+    padding: 10px;
+}
+
+#nav-item2, #nav-item1 {
+    margin: 0;
+}
+
+#menu p,
+#menu h2 {
+    display: grid;
+    justify-content: center;
+}
+
 #nav-item1 {
     flex: 1;
 }
