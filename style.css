@@ -28,7 +28,3 @@
     transform: rotateY(180deg);
     border-color: #0f0f0f; 
 }
-
-.flashcard-container:hover .flashcard {
-    transform: rotateY(180deg);
-}
