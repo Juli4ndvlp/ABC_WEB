@@ -1,9 +1,33 @@
 const number = document.getElementById("number");
 let cardsViewed = new Set();
-const vocals = ["A"];
+const vocals = ["A", "E", "I", "O", "U"];
 const dictAll = {
     "A": ["Avión", "assets/avion.avif"],
-    "M": ["Mano", "assets/mano.jpg"]
+    "B": ["Barco", "assets/barco.avif"],
+    "C": ["Casa", "assets/casa.avif"],
+    "D": ["Dado", "assets/dado.avif"],
+    "E": ["Elefante", "assets/elefante.avif"],
+    "F": ["Flor", "assets/flor.avif"],
+    "G": ["Gato", "assets/gato.avif"],
+    "H": ["Helado", "assets/helado.avif"],
+    "I": ["Isla", "assets/isla.avif"],
+    "J": ["Jirafa", "assets/jirafa.avif"],
+    "K": ["Koala", "assets/koala.avif"],
+    "L": ["León", "assets/leon.avif"],
+    "M": ["Mano", "assets/mano.jpg"],
+    "N": ["Nube", "assets/nube.avif"],
+    "O": ["Oso", "assets/oso.avif"],
+    "P": ["Perro", "assets/perro.avif"],
+    "Q": ["Queso", "assets/queso.avif"],
+    "R": ["Ratón", "assets/raton.avif"],
+    "S": ["Sol", "assets/sol.avif"],
+    "T": ["Tren", "assets/tren.avif"],
+    "U": ["Uva", "assets/uva.avif"],
+    "V": ["Vaca", "assets/vaca.avif"],
+    "W": ["Waffle", "assets/waffle.avif"],
+    "X": ["Xilófono", "assets/xilofono.avif"],
+    "Y": ["Yate", "assets/yate.avif"],
+    "Z": ["Zebra", "assets/zebra.avif"]
 };
 
 function card(letter, palabra, imagen) {

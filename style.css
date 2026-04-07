@@ -52,7 +52,8 @@ nav {
     display: flex;
     justify-content: center;
     flex: 1;
-    gap: 10px;
+    gap: 50px;
+    flex-wrap: wrap;
 }
 
 .container-footer {
@@ -93,7 +94,6 @@ nav {
     transform-style: preserve-3d;
 
 }
-
 
 .flashcard.flipped {
     transform: rotateY(180deg);
