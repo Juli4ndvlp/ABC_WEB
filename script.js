@@ -1,4 +1,6 @@
 const number = document.getElementById("number");
+const cardsContainer = document.getElementsByClassName("container-letters")[0];
+
 let cardsViewed = new Set();
 const vocals = ["A", "E", "I", "O", "U"];
 const dictAll = {
@@ -44,18 +46,7 @@ function card(letter, palabra, imagen) {
                 </div>`;
 }
 
-const cardsContainer = document.getElementsByClassName("container-letters")[0];
-
-function showAll(dict) {
-    if (!dict) {
-        dict = dictAll;
-        cardsContainer.replaceChildren();
-    }
-    for (const letter in dict) {
-    const [palabra, imagen] = dict[letter];
-    const temp = document.createElement("div");
-    temp.innerHTML = card(letter, palabra, imagen);
-
+function flipCard(temp, letter) {
     const front = temp.querySelector('#flashcard-front');
     const back = temp.querySelector('#flashcard-back');
     const cardElement = temp.querySelector('#card');
@@ -71,18 +62,30 @@ function showAll(dict) {
     back.addEventListener('click', function() {
         cardElement.classList.remove('flipped');
     });
+}
+
+function showCards(dict) {
+    if (!dict) {
+        dict = dictAll;
+        cardsContainer.replaceChildren();
+    }
+    for (const letter in dict) {
+    const [palabra, imagen] = dict[letter];
+    const temp = document.createElement("div");
+    temp.innerHTML = card(letter, palabra, imagen);
+
+    flipCard(temp, letter);
 
     cardsContainer.appendChild(temp.firstElementChild);
-}
+    }
 }
 
-showAll();
-
+showCards();
 
 function showVocals() {
     cardsContainer.replaceChildren();
     const dictFiltered = Object.fromEntries(
         Object.entries(dictAll).filter(([key]) => vocals.includes(key))
     );
-    showAll(dictFiltered);
+    showCards(dictFiltered);
 }
