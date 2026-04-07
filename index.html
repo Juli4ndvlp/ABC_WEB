@@ -11,12 +11,12 @@
     <nav>
         <div class="navbar bg-success" id="menu">
             <h1 class="nav-item">ABC WEB</h1>
-            <p class="nav-item">Letras vistas = 0</p>
+            <p class="nav-item">Letras vistas: <span id="number">0</span></p>
         </div>
     </nav>
     <div class="container-buttons">
-        <button type="button" class="btn btn-success">Todas</button>
-        <button type="button" class="btn btn-success">Vocales</button>
+        <button type="button" class="btn btn-success" onclick="showAll()">Todas</button>
+        <button type="button" class="btn btn-success" onclick="showVocals()">Vocales</button>
     </div>
     <div class="container-letters"></div>
     <div class="container-footer bg-success">

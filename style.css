@@ -25,7 +25,6 @@ nav {
     margin: 0;
 }
 
-#menu p,
 #menu h2 {
     display: grid;
     justify-content: center;
@@ -38,6 +37,7 @@ nav {
     gap: 10px;
     flex-wrap: wrap;
     padding-left: 5px;
+    gap: 10px;
 }
 
 .container-buttons button {
@@ -51,8 +51,8 @@ nav {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex: 1;
+    gap: 10px;
 }
 
 .container-footer {
@@ -76,8 +76,8 @@ nav {
 }
 
 .flashcard-container {
-    width: 150px;
-    height: 200px;
+    width: 100px;
+    height: 150px;
     perspective: 1000px;
     aspect-ratio: 1 / 1.1; 
     cursor: pointer;
@@ -111,4 +111,8 @@ nav {
 
 #flashcard-back {
     transform: rotateY(180deg);
+}
+
+.img-fluid {
+    height: 100px;
 }
