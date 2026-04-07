@@ -83,18 +83,19 @@ nav {
 }
 
 .flashcard {
-
+    box-shadow: 1px 1px 4px 1px #636363;
     position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-
+    border: 1px solid #e0e0e0;
 }
 
 .flashcard.flipped {
     transform: rotateY(180deg);
+    box-shadow: none;
 }
 
 #flashcard-front, #flashcard-back {
