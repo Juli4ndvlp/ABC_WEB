@@ -79,8 +79,6 @@ nav {
 .flashcard-container {
     width: 100px;
     height: 150px;
-    perspective: 1000px;
-    aspect-ratio: 1 / 1.1; 
     cursor: pointer;
 }
 
