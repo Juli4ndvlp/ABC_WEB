@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +8,30 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <nav>
-        <div class="navbar bg-success" id="menu">
-            <h1 class="nav-item">ABC WEB</h1>
-            <p class="nav-item">Letras vistas = 0</p>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid d-flex justify-content-between">
+            <h2 class="navbar-text">ABC WEB</h2>
+            <span class="navbar-text fw-bold">Letras vistas: <span id="contador">0</span></span>
         </div>
     </nav>
-    <div class="container-buttons">
-        <button type="button" class="btn btn-success">Todas</button>
-        <button type="button" class="btn btn-success">Vocales</button>
+
+    <!-- Filtros -->
+    <div class="container-fluid px-5 py-2 d-flex gap-2">
+        <button class="btn btn-sm btn-primary active" data-filtro="todas">Todas</button>
+        <button class="btn btn-sm btn-outline-primary" data-filtro="vocales">vocales</button>
+        <button class="btn btn-sm btn-outline-primary" data-filtro="consonantes">Letras</button>
     </div>
-    <div class="container-letters"></div>
-    <div class="container-footer bg-success">
-        <h3>Equipo #4</h3>
-        <p>Julian Valderrama | Joan Triana | Luselly Hinestroza | Leisy Sánchez</p>
-    </div>
+
+    <main>
+        <div class="container-fluid px-5 py-4">
+            <div class="row g-3 mb-3" id="cards-container"></div>
+        </div>
+    </main>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
