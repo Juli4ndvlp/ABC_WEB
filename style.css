@@ -1,10 +1,10 @@
 .custom-blue {
-    background-color: #7e25a7; 
+    background-color: #1397d0;
 }
 
 .flashcard-container {
     perspective: 1000px;
-    aspect-ratio: 1 / 1.1; 
+    height: 140px;
     cursor: pointer;
 }
 
@@ -16,15 +16,20 @@
     transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.flashcard-front, .flashcard-back {
+.flashcard-front,
+.flashcard-back {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    border: 3px solid transparent;
+    -webkit-backface-visibility: hidden;
 }
 
 .flashcard-back {
     transform: rotateY(180deg);
-    border-color: #0f0f0f; 
+    border: 2px solid #0f0f0f;
+}
+
+.flashcard.is-flipped {
+    transform: rotateY(210deg);
 }
